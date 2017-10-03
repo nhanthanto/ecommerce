@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <link href="https://blackrockdigital.github.io/startbootstrap-stylish-portfolio/css/stylish-portfolio.css" rel="stylesheet">
+  	<script src="https://use.fontawesome.com/2fde9906aa.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="https://blackrockdigital.github.io/startbootstrap-stylish-portfolio/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <title>Portfolio</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="/">TheShop</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li style="padding-right: 25px" class="nav-item">
+        <a class="nav-link" href="/about">About Us</a>
+      </li>
+      <li style="padding-right: : 25px; padding-top: 15px">
+        <!-- <p class="text-center" style="padding-right: 15px;" ><a href="#" class="btn btn-primary btn-lg" role="button" data-toggle="modal" data-target="#login-modal">Login/Reg</a></p> -->
+        <a href="/login"><strong>Login/Registration</strong></a>
+      </li>
+      <li style="padding-top: 5px; padding-left: 15px">
+                    <a href="/cart">
+          <i style="font-size: 4rem; padding-right: 15px" class="fa fa-shopping-cart" aria-hidden="true"></i>
+        </a>
+      </li>
+    </ul>
+<!-- 
+ 	<form style="float: right" class="form-inline">
+	    <input type="text" id="myInput" onkeyup="myFunction()" class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+  	</form> -->
+  </div>
+</nav>
+<br>
+    <%= yield %>
+  </body>
+</html>

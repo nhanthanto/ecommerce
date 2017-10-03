@@ -1,0 +1,9 @@
+<div style="text-align: center; background-image: url(https://i.imgur.com/MdMniMd.jpg);image-rendering: -webkit-optimize-contrast;" class="jumbotron jumbotron-fluid">
+  <h1 class="display-3">Hello, <%= @user.fname%>!</h1>
+  <p class="lead">This is your personal e-commerce dash!</p>
+  <p>Your user ID is <%= @user.id%></p>
+  <p class="lead">
+  	<a class="btn btn-primary btn-lg" href="/"  role="button">Continue Shopping!</a>
+    <a class="btn btn-primary btn-lg" href="/login/:id" data-method="delete" role="button">Log Out</a>
+  </p>
+</div>
